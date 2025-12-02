@@ -22,7 +22,8 @@ public class FormulaSolution {
         area = Math.PI * Math.pow(radius,2);
 
         // circle volume calculation
-        volume = (4.0/3.0) * Math.PI * Math.pow(radius,3);
+//        volume = (4.0/3.0) * Math.PI * Math.pow(radius,3);
+        volume = ((double)4/3) * Math.PI * Math.pow(radius,3);
 
         //showing answers
         System.out.println("The circumference of the circle is " + circumference);
