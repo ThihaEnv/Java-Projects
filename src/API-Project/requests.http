@@ -1,0 +1,29 @@
+### Get All User
+GET http://localhost:8080
+Accept : application/json
+
+### Get football club's names
+GET http://localhost:8080/api/v1/footballclub-names
+
+### Add new football club's name
+POST http://localhost:8080/api/v1/footballclub-names
+Content-Type: application/json
+
+{
+"id": 6,
+"clubName": "Tottenham HotSpurs",
+"playerNames": "Ven de Van,Romero,Richarlison"
+}
+
+### Update football clubs (PUT)
+PUT http://localhost:8080/api/v1/footballclub-names/6
+Content-Type: application/json
+
+{
+"id": 6,
+"clubName": "Crystal Palace",
+"playerNames": "Henderson,Mateta,Kamada"
+}
+
+### Delete football clubs (Delete)
+DELETE http://localhost:8080/api/v1/footballclub-names/6
