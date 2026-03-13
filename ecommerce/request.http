@@ -1,0 +1,54 @@
+### 1. Welcome Message
+GET http://localhost:8080
+Accept: application/json
+
+### 2. Get All Sports Products
+GET http://localhost:8080/api/v1/products
+
+### 3. Add New Sports Product
+POST http://localhost:8080/api/v1/products
+Content-Type: application/json
+
+{
+  "name": "Swimming Goggles",
+  "price": 15.0
+}
+
+### 4. Update Sports Product
+PUT http://localhost:8080/api/v1/products/6
+Content-Type: application/json
+
+{
+  "id": 6,
+  "name": "Under Armour Runners",
+  "price": 65.0
+}
+
+### 5. Delete Sports Product
+DELETE http://localhost:8080/api/v1/products/5
+
+### get all Customers
+GET http://localhost:8080/api/v1/customers
+Accept: application/json
+
+### add new customers and cart
+POST http://localhost:8080/api/v1/customers
+Content-Type: application/json
+
+{
+  "name": "Roy",
+  "email": "roy@email.com"
+}
+
+### update customers
+PUT http://localhost:8080/api/v1/customers/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Elen",
+  "email": "elen@gmail.com"
+}
+
+### delete customers
+DELETE http://localhost:8080/api/v1/customers/1
